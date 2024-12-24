@@ -15,26 +15,27 @@
 
         /* Header Section */
         header {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
             color: #fff;
             text-align: center;
-            padding: 40px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
+            font-size: 3em;
             margin: 0;
-            font-size: 2.5em;
         }
 
         header p {
             font-size: 1.2em;
+            margin-top: 10px;
         }
 
         /* Navigation */
         nav {
             display: flex;
             justify-content: center;
-            background: #34495E;
+            background: #2C3E50;
             padding: 10px 0;
         }
 
@@ -86,7 +87,7 @@
 
         /* Services Section */
         .section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -99,20 +100,32 @@
             margin-bottom: 20px;
         }
 
-        .services ul {
-            list-style: none;
-            padding: 0;
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 250px;
+            text-align: center;
         }
 
-        .services li {
-            font-size: 1.1em;
-            margin: 10px 0;
-            color: #444;
+        .service-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
 
         /* About Section */
         .about {
             background: #FFFFFF;
+            padding: 60px 20px;
         }
 
         .about h2 {
@@ -123,12 +136,16 @@
         .about p {
             font-size: 1.1em;
             color: #555;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* Contact Section */
         .contact {
             background: #1e3c72;
             color: #fff;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .contact h2 {
@@ -141,15 +158,6 @@
             margin-bottom: 10px;
         }
 
-        .contact .cta-button {
-            background: #FFD700;
-            color: #333;
-        }
-
-        .contact .cta-button:hover {
-            background: #E1C700;
-        }
-
         .contact a {
             color: #FFD700;
             text-decoration: none;
@@ -160,13 +168,22 @@
             text-decoration: underline;
         }
 
+        .contact .cta-button {
+            background: #FFD700;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .contact .cta-button:hover {
+            background: #E1C700;
+        }
+
         /* Footer */
         footer {
             background: #2C3E50;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            margin-top: 30px;
         }
     </style>
 </head>
@@ -195,26 +212,20 @@
     <!-- Services Section -->
     <section id="services" class="section services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Lead Generation</li>
-            <li>Social Media Marketing</li>
-            <li>SEO</li>
-            <li>Paid Advertising (Google & Meta Ads)</li>
-            <li>Personal Branding Consulting</li>
-            <li>Email Marketing</li>
-            <li>Marketing Strategist</li>
-            <li>Content Marketing</li>
-            <li>Website Optimization</li>
-            <li>Analytics & Performance Tracking</li>
-        </ul>
+        <div class="service-card">
+            <img src="https://via.placeholder.com/50" alt="Lead Generation">
+            <h3>Lead Generation</h3>
+        </div>
+        <div class="service-card">
+            <img src="https://via.placeholder.com/50" alt="SEO">
+            <h3>SEO</h3>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>Hi, I’m Harshada Wayadande, Founder of Growthify Digital.</p>
-        <p>With over 2 years of experience as a Marketing Specialist, I’ve crafted impactful strategies, executed SEO campaigns, generated leads, and implemented email marketing funnels.</p>
-        <p>I’ve worked with Dariya Logistics and delivered a successful branding project for a Tarot Reader. Let’s create your success story together!</p>
+        <p>With over 2 years of experience, I’ve worked with Dariya Logistics and successfully led a project for a Tarot Reader, helping them connect deeply with their audience.</p>
     </section>
 
     <!-- Contact Section -->
